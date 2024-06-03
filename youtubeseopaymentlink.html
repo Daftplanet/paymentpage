@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stripe Buy Button</title>
-    <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stripe Buy Button Centered</title>
+<script async src="https://js.stripe.com/v3/buy-button.js"></script>
+<style>
+  html, body {
+    height: 100%; /* Full height for the page */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Enables flexbox model */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    font-family: Arial, sans-serif; /* Font styling */
+  }
+</style>
 </head>
 <body>
-    <stripe-buy-button
-        buy-button-id="buy_btn_1PNftJKJXBoahcnkVD3fLmL4"
-        publishable-key="pk_live_51HoSY3KJXBoahcnk56v5TDvBSmXFwxtTwS0mjkKHIcC6AdXGk8dZYASbIFQQGWlCUrv83WUTBjAMDBHDNX4twV9L00w62euCUk">
-    </stripe-buy-button>
+  <stripe-buy-button
+    buy-button-id="buy_btn_1PNftJKJXBoahcnkVD3fLmL4"
+    publishable-key="pk_live_51HoSY3KJXBoahcnk56v5TDvBSmXFwxtTwS0mjkKHIcC6AdXGk8dZYASbIFQQGWlCUrv83WUTBjAMDBHDNX4twV9L00w62euCUk">
+  </stripe-buy-button>
 </body>
 </html>
